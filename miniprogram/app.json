@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/list/list",
+    "pages/partner/partner",
+    "pages/more/more"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发test",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#fca15e",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "iconPath": "images/list.png",
+        "selectedIconPath": "images/list-active.png",
+        "text": "活动"
+      },
+      {
+        "pagePath": "pages/partner/partner",
+        "iconPath": "images/partner.png",
+        "selectedIconPath": "images/partner-active.png",
+        "text": "伙伴"
+      },
+      {
+        "pagePath": "pages/more/more",
+        "iconPath": "images/more.png",
+        "selectedIconPath": "images/more-active.png",
+        "text": "更多"
+      }]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
