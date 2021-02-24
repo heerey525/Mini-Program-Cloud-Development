@@ -1,2 +1,3 @@
 <!--pages/partner/partner.wxml-->
 <text>pages/partner/partner.wxml</text>
+<button open-type="getUserInfo">弹出授权弹窗</button>

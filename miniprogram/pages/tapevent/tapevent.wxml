@@ -1,0 +1,50 @@
+<!--pages/tapevent/tapevent.wxml-->
+<navigator id="detailshow" url="./../home/detail/detail?id=lesson&uid=tcb&key=tap&ENV=weapp&frompage=lifecycle" class="item-link">点击链接看控制台</navigator>
+
+<view class="weui-navbar">
+  <block wx:for="{{tabs}}" wx:key="index">
+    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+      <view class="weui-navbar__title">{{item}}</view>
+    </view>
+  </block>
+</view>
+<view class="weui-tab__panel">
+  <view hidden="{{activeIndex != 0}}">帝都</view>
+  <view hidden="{{activeIndex != 1}}">魔都</view>
+  <view hidden="{{activeIndex != 2}}">妖都</view>
+  <view hidden="{{activeIndex != 3}}">渔村</view>
+</view>
+
+<text>{{text}}</text>
+<button bindtap="addLine">新增一行</button>
+<button bindtap="removeLine">删掉最后一行</button>
+
+<video id="daxueVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" autoplay loop muted="{{muted}}" initial-time="100" controls event-model="bubble">
+</video>
+<button bindtap="changeMuted">静音和取消静音</button>
+<button bindtap="navigateBack">返回上一页</button>
+<button bindtap="navigateTo">保留页面并跳转</button>
+<button bindtap="switchTab">跳转到组件Tab页</button>
+<button bindtap="redirectTo">关闭当前页面跳转</button>
+
+<button type="default" bindtap="actionSheetTap">弹出操作菜单</button>
+
+<button type="primary" bindtap="vibrateLong">长振动</button>
+<button type="primary" bindtap="toastTap">点击弹出消息对话框</button>
+
+<view class="container">
+     <!-- 分割线 -->
+  <view class="divLine"></view>
+</view>
+
+<button type="primary" bindtap="modalTap">显示模态对话框</button>
+
+<view class="container">
+     <!-- 分割线 -->
+  <view class="divLine"></view>
+</view>
+
+<button type="primary" bindtap="scrollToPosition">滚动到页面指定位置</button>
+<view class="pagetop" style="background-color:#333;width:100%;height:400px"></view>
+<button type="primary" bindtap="scrollToTop">滚动到页面顶部（返回顶部）</button>
+<view id="pageblock" style="background-color:#333;width:100%;height:400px"></view>

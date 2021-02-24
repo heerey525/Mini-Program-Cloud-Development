@@ -1,0 +1,3 @@
+<!--miniprogram/pages/home/detail/detail.wxml-->
+<navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+点击链接看控制台</navigator>

@@ -1,0 +1,5 @@
+<template name="foot">
+  <view class="page-foot">
+    <view class="index-desc" style="text-align:center;font-size:12px;bottom:20rpx;position:absolute;bottom:20rpx;width:100%">云开发技术训练营</view>
+  </view>
+</template>

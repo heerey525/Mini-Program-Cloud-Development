@@ -1,0 +1,8 @@
+<!--pages/condition/condition.wxml-->
+<view>班级学生总数为：{{male+female}}</view>
+<view>班级学生总数为：{{male}}+{{female}}</view>
+<!-- 下面两个的计算结果和上面是一样的哦 -->
+<view>班级学生总数为：{{22+9}}</view>
+<view>班级学生总数为：{{male+9}}</view> 
+<view wx:if="{{female > 5}}"> 如果女生人数多于5人就显示</view>
+<view wx:if="{{female > 10}}"> 如果女生人数多于10人就显示</view>
